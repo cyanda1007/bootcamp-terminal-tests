@@ -1,5 +1,5 @@
 import assert from "assert";
-import transportFee from "../transportFee";
+import transportFee from "../transportFee.js";
 describe("The transport fee function", function () {
   it("should check how much the transport will cost", function () {
     assert.equal(transportFee("morning"), "R20");

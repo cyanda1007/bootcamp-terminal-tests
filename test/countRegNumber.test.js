@@ -1,5 +1,5 @@
 import assert from "assert";
-import countRegNumber from "../countRegNumber";
+import countRegNumber from "../countRegNumber.js";
 describe("The countRegNumber function", function () {
   it("should count how many registration number are there", function () {
     var regCount = countRegNumber("CA 182736,CY 523519,CJ 812328");

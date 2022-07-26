@@ -1,5 +1,5 @@
 import assert from "assert";
-import totalPhoneBill from "../totalPhoneBill";
+import totalPhoneBill from "../totalPhoneBill.js";
 describe("The total phone bill function", function () {
   it("should check the total phone bill has been make", function () {
     assert.equal("R7.45", totalPhoneBill("call, sms, call, sms, sms"));

@@ -1,9 +1,28 @@
 import assert from "assert";
-import findItemsOver from "../findItemsOver";
+import findItemsOver from "../findItemsOver.js";
 describe("The findItemsOver function", function () {
-  it("should check which list make over items", function () {
+  it("should return item", function () {
+    var itemList = [
+      { name: "apples", qty: 10 },
+      { name: "pears", qty: 37 },
+      { name: "bananas", qty: 27 },
+      { name: "apples", qty: 3 },
+    ];
+    var results = [
+      { name: "pears", qty: 37 },
+      { name: "bananas", qty: 27 },
+    ];
     assert.deepEqual(results, findItemsOver(itemList, 20));
+  });
+  it("should return item", function () {
+    var itemList2 = [
+      { name: "apples", qty: 10 },
+      { name: "pears", qty: 19 },
+      { name: "bananas", qty: 17 },
+      { name: "apples", qty: 3 },
+    ];
+
+    var results2 = [];
     assert.deepEqual(results2, findItemsOver(itemList2, 20));
-    assert.deepEqual(results3, findItemsOver(itemList3, 20));
   });
 });

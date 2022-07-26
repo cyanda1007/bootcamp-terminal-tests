@@ -1,5 +1,5 @@
 import assert from "assert";
-import countAllPaarl from "../countAllPaarl";
+import countAllPaarl from "../countAllPaarl.js";
 describe("The count all from Paarl function", function () {
   it("should count how many from paarl", function () {
     assert.equal(

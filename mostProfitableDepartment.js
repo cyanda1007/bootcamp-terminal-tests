@@ -36,7 +36,7 @@ var salesData = [
   { department: "outdoor", sales: 12006, day: "Friday" },
   { department: "carpentry", sales: 16109, day: "Friday" },
 ];
-export default function mostProfitableDay(salesData) {
+function mostProfitableDay(salesData) {
   var highDay = 0;
   var Salesday = {};
   var day;

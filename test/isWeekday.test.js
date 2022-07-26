@@ -1,13 +1,10 @@
 import assert from "assert";
-import isWeekday from "../isWeekday";
+import isWeekday from "../isWeekday.js";
 describe("The Weekday function", function () {
-  it("should determine that is this Weekday", function () {
-    assert.equal(isWeekday("Saturday"), false);
-    assert.equal(isWeekday("Sunday"), false);
+  it("should return true if a weekday", function () {
     assert.equal(isWeekday("Monday"), true);
-    assert.equal(isWeekday("Tuesday"), true);
-    assert.equal(isWeekday("Wednesday"), true);
-    assert.equal(isWeekday("Thursday"), true);
-    assert.equal(isWeekday("Friday"), true);
+  });
+  it("should return false if it not weekday", function () {
+    assert.equal(isWeekday("Saturday"), false);
   });
 });

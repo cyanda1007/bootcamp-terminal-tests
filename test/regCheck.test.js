@@ -1,5 +1,5 @@
 import assert from "assert";
-import regCheck from "../regCheck";
+import regCheck from "../regCheck.js";
 describe("The regCheck function", function () {
   it("should check which registration is from", function () {
     assert.equal(regCheck("DC 55 YU GP", "GP"), true);

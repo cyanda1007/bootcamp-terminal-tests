@@ -1,5 +1,5 @@
 import assert from "assert";
-import isFromBellville from "../isFromBellville";
+import isFromBellville from "../isFromBellville.js";
 describe("The Bellville function", function () {
   it("should determine is this registration from Bellville", function () {
     assert.equal(isFromBellville("CY 123"), true);
